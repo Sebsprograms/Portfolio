@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#home" class="active">SB</a>
+            <div id="myLinks">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <header>
+            <h1 class="title">Sebastian Benad</h1>
+            <h2 class="title">Front End Developer</h2>
+        </header>
+        <div class="spacer"></div>
+        <main>
+          <div class="main-container">
+            <h2 class="about-title">About</h2>
+            <img src="./static/img/face.jpg" alt="Picture of Sebastian" id="me">
+            <div class="about">
+              <p class="about-text">I'm Sebastian, a front end developer based out of Calgary AB with a passion for full stack development. If you are looking for free lance work, a developer like me for your team, or collaboration please send me an email. Including details of the project or position helps. <br><br>Thank you ;)</p>
+            </div>
+
+            <div class="spacer"></div>
+
+            <h2 class="projects-title">Projects</h2>
+            <div class="projects">
+              <div class="projectsCard">
+                <img class="projects-img" src="./static/img/sampleProject.jpg" alt="sample project">
+                <button class="projects-visit">Visit</button>
+                <i class="fa-solid fa-circle-question toggler-1"></i>
+                <div class="projects-overlay overlay-1">
+                  <h3 class="projects-title">Serial Number Decoder</h3>
+                  <p class="projects-spec">Decodes known serial number patterns of common HVAC equipment & Water Heater brands. Using flask & server side python regex.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="spacer"></div>
+        <footer>
+            <p id="copyright">Sebastian Benad - &copy; </p>
+
+        </footer>
+    </div>
+    <canvas class="webgl"></canvas>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // projects cards jquery
+        const toggler1 = $(".toggler-1")
+        const overlay1 = $(".overlay-1")
+        toggler1.click(function(){
+          overlay1.toggle()
+        })
+
+        // Navbar vanilla js
+        function myFunction() {
+          let x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        // footer date vanilla js
+        let year = new Date();
+        let footerText = document.getElementById("copyright");
+        footerText.innerHTML += ' ' + year.getFullYear();
+    </script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>

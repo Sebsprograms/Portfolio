@@ -1,0 +1,262 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+p, a {
+    font-family: "Roboto Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+
+
+/* Base Body */
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Roboto Mono';
+    color: white;
+    height: 100vh;
+}
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.spacer {
+    height: 200px;
+}
+/* Navigation */
+
+nav {
+    overflow: hidden;
+    background-color: rgba(10, 10, 10, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    display: block;
+}
+
+nav #myLinks {
+    display: none;
+}
+
+nav a {
+    padding: 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav a:hover {
+    background-color: #00d889;
+    color: black;
+}
+
+.active {
+    background-color: rgba(10, 10, 10, 0.8);
+    color: white;
+}
+
+
+/* Header */
+header {
+    height: 95vh;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title {
+    background-color: rgba(10, 10, 10, 0.2);
+    padding: 16px;
+}
+
+
+
+
+/* Main */
+main {
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* About */
+.about-title {
+    text-align: center;
+}
+
+.about-text {
+    font-size: 24px;
+}
+
+#me {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: 24px auto;
+}
+
+
+
+
+/* Projects */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.projectsCard {
+    position: relative;
+    width: 100%;
+    width: 320px;
+}
+
+.projects-img {
+    width: 100%;
+    height: 320px;
+    display: block;
+}
+
+.projects-overlay {
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 24px 24px 24px;
+    height: 320px;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.projects-spec {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.fa-circle-question {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 48px;
+    color: white;
+    display: block;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.fa-circle-question:hover {
+    color: #00d889;
+}
+
+.projects-visit {
+    width: 100%;
+    padding: 16px;
+    font-size: 24px;
+    border: 0;
+    background-color: #fff;
+    color: #111;
+    font-weight: bold;
+}
+
+.projects-visit:hover {
+    background-color: #00d889;
+}
+
+
+/* Footer */
+footer {
+    width : 100%;
+    background-color: rgba(10, 10, 10, 0.8);
+    text-align: center;
+    padding: 16px
+}
+
+
+
+/* media queries for responsive design */
+@media only screen and (max-width: 750px){
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .projects-spec {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 20px;
+    }
+}

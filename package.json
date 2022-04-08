@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio website for sebastian benad\\",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Benad",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.139.2"
+  }
+}
