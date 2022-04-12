@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -170,7 +170,7 @@ main {
 .projectsCard {
     position: relative;
     width: 100%;
-    width: 320px;
+    width: 300px;
 }
 
 .projects-img {
@@ -195,7 +195,7 @@ main {
 
 .projects-spec {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .fa-circle-question {
@@ -247,9 +247,7 @@ footer {
     h2 {
         font-size: 1.5rem;
     }
-    h3 {
-        font-size: 1.25rem;
-    }
+
 }
 
 @media only screen and (max-width: 450px){
