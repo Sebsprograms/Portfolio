@@ -123,14 +123,11 @@ header {
 
 /* Main */
 main {
-    background-color: rgba(10, 10, 10, 0.8);
+    background-color: rgba(10, 10, 10, 0.7);
     width: 100%;
-}
-
-.main-container {
-    max-width: 1400px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 32px;
+    max-width: 1400px;
 }
 
 /* About */
