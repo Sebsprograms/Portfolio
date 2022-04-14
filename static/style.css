@@ -92,7 +92,7 @@ nav a.icon {
 }
 
 nav a:hover {
-    background-color: #00d889;
+    background-color: #8b8bff;
     color: black;
 }
 
@@ -208,7 +208,7 @@ main {
 }
 
 .fa-circle-question:hover {
-    color: #00d889;
+    color: #8b8bff;
 }
 
 .projects-visit {
@@ -222,7 +222,7 @@ main {
 }
 
 .projects-visit:hover {
-    background-color: #00d889;
+    background-color: #8b8bff;
 }
 
 /* Contact */
@@ -264,7 +264,7 @@ main {
 }
 
 .form-submit:hover {
-    background-color: #00d889;
+    background-color: #8b8bff;
 }
 
 /* Footer */
