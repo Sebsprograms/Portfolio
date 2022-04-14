@@ -51,7 +51,22 @@
 
             <div class="spacer"></div>
 
-            <div id="contact"></div>
+            <div id="contact">
+              <h2>Contact</h2>
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/mqknyeev"
+                method="POST"
+              >
+                <label for="email">Your Email</label>
+                <input type="email" name="email">
+                
+                <label for="message">Message</label>
+                <textarea name="message" rows="5"></textarea>
+                <!-- your other form fields go here -->
+                <button class="form-submit" type="submit">Send</button>
+              </form>
+            </div>
 
         </main>
         <footer>
